@@ -49,12 +49,34 @@
                 <p>
                     For decades, software has forced humans to adapt to machines. 
                     SayeOS reverses that relationship. It creates a structured, governed environment 
-                    where AI amplifies human capability instead of replacing or overwhelming it.
+                    where AI truly amplifies human capability — instead of replacing or overwhelming it.
                 </p>
             </div>
 
-            <div class="cta" style="margin: 80px 0 100px;">
-                <a href="#" class="btn primary" id="waitlist-btn">Join the Waitlist</a>
+            <!-- Waitlist Form -->
+            <div style="background: rgba(255,255,255,0.05); padding: 50px 40px; border-radius: 8px; max-width: 620px; margin: 80px auto;">
+                <h3 style="color: #B38B5E; text-align: center; margin-bottom: 20px;">Join the Waitlist</h3>
+                <p style="text-align: center; margin-bottom: 30px; color: #ddd;">
+                    Be among the first to access the limited beta (CLI, extensions, and Linux distribution).
+                </p>
+                
+                <form action="https://formspree.io/f/xpqozvno" method="POST">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="your@email.com" 
+                        required 
+                        style="width: 100%; padding: 16px; margin-bottom: 16px; border-radius: 6px; border: none; background: #fff; color: #111; font-size: 1.05rem;">
+                    
+                    <button 
+                        type="submit"
+                        style="width: 100%; padding: 16px; background: #B38B5E; color: #0A2540; border: none; border-radius: 6px; font-weight: 600; font-size: 1.15rem; cursor: pointer;">
+                        Join the Waitlist
+                    </button>
+                </form>
+            </div>
+
+            <div class="cta" style="margin-bottom: 80px;">
                 <a href="https://sayeos.com" target="_blank" class="btn secondary">Enterprise Edition →</a>
             </div>
 
@@ -74,12 +96,12 @@
                 </div>
             </div>
 
-            <div class="section" style="margin-top: 100px; text-align: center;">
-                <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto;">
-                    Current status: Limited beta — CLI, extensions, and Linux distribution available.
-                </p>
-                <p style="margin-top: 30px;">
+            <div style="text-align: center; margin-top: 90px;">
+                <p style="margin-bottom: 10px;">
                     <strong>Contact:</strong> <a href="mailto:hello@sayeos.org" style="color: #B38B5E;">hello@sayeos.org</a>
+                </p>
+                <p style="font-size: 0.95rem; color: rgba(255,255,255,0.7);">
+                    Current status: Limited beta — CLI, extensions, and Linux distribution available.
                 </p>
             </div>
 
@@ -88,13 +110,5 @@
             </div>
         </div>
     </div>
-
-    <!-- Simple waitlist placeholder -->
-    <script>
-        document.getElementById('waitlist-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert("Waitlist signup coming soon.\n\nFor now, email hello@sayeos.org to express interest.");
-        });
-    </script>
 </body>
 </html>
